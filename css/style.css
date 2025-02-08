@@ -128,7 +128,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: space-between;
 }
+
 .hebergements a {
     width: calc((100% - 110px) / 3);
 }
@@ -136,7 +138,8 @@ a {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex-basis: calc(33.333% - 40px); /* Ajustez la largeur pour tenir compte de l'espace entre les cartes */
+    box-sizing: border-box;
 }
 
 .hebergements-cards .card-content {
