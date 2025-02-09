@@ -227,24 +227,34 @@ a {
         .lodgements-cards .card {
             display: flex;
             flex-direction: column;
-            flex-basis: calc(33.333% - 40px); /* Ajustez la largeur pour tenir compte de l'espace entre les cartes */
+            flex-basis: calc(33.333% - 40px);
             box-sizing: border-box;
+            min-width: 250px;
+            max-height: 217px;
         }
 
         .lodgements-cards .card-content {
             display: flex;
             flex-direction: column;
-            gap: 8px;
             padding-left: 15px;
             padding-right: 15px;
-            margin-bottom: 15px;;
+
+        }
+
+        .lodgements-cards .card-title {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        .lodgements-cards .card-rating {
+            margin-bottom: 15px;
         }
 
         .lodgements-cards img {
             align-self: center;
             object-fit: cover;
             width: 100%;
-            height: 136px;
+            height: 124px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             border: 5px;
@@ -289,8 +299,7 @@ a {
             box-sizing: border-box;
         }
 
-        .populaires-cards .card-title,
-        .lodgements-cards .card-title {
+        .populaires-cards .card-title {
             margin-top: 10px;
             margin-bottom: 4px;
         }
