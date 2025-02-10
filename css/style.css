@@ -154,17 +154,17 @@ a {
     }
 
     /****** Filters ***********/
-    #flex-filters {
+    #flex-filters, #flex-filters span {
         display: flex;
         justify-content: left;
         align-items: center;
-        height: 50px;
+        height: 46px;
         gap: 15px;
         margin-top: 25px;
         margin-bottom: 25px;
     }
-
-    #flex-filters div {
+    
+    .filter-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -174,16 +174,20 @@ a {
         border-radius: 25px;
         padding: 0 19px 0 19px;
     }
-    #flex-filters div:hover {
+    .filter-container:hover {
         background-color: var(--filter-bg-color);
     }
 
-    #flex-filters div  a {
+    .filter-container  a {
         color: black;
         font-weight: bold;
+        font-size: 17px;
     }
 
-
+    #filters-txt h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
 /****** Main ***********/
 
     /****** Nombres de résultats ***********/
@@ -422,6 +426,33 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /**** Filters ****/
+        #flex-filters {
+            height: 91px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        #flex-filters span {
+            margin: 0;
+            width: 100%;
+        }
+
+        .filter-container {
+            padding: 0;
+            height: 46px;
+            width: 100%;
+        }
+
+        .filter-container  a {
+            font-size: 16px;
+        }
+
+        #filters-txt h2 {
+            margin: 0;
+        }
+
     .lodgements-and-populaires {
         flex-direction: column;
     }
