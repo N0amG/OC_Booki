@@ -1,15 +1,15 @@
 /* Variables et Reset */
 :root {
-    --color-primary: #0065FC;
-    --color-primary-light: #DEEBFF;
-    --color-bg: #F2F2F2;
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
     --color-border: #D9D9D9;
-    --spacing-xs: 5px;
-    --spacing-sm: 10px;
-    --spacing-md: 15px;
-    --spacing-lg: 20px;
-    --spacing-xl: 30px;
-    --spacing-2xl: 35px;
+    --spacing-5: 5px;
+    --spacing-10: 10px;
+    --spacing-15: 15px;
+    --spacing-20: 20px;
+    --spacing-30: 30px;
+    --spacing-35: 35px;
 }
 
 * {
@@ -20,8 +20,9 @@
 /* Layout Utilities */
 .container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
+	max-width: 1440px;
+	padding: 0 50px;
+	box-sizing: border-box;
 }
 
 .flex { display: flex; }
@@ -31,28 +32,30 @@
 .justify-center { justify-content: center; }
 .items-center { align-items: center; }
 .items-start { align-items: flex-start; }
-.gap-xs { gap: var(--spacing-xs); }
-.gap-sm { gap: var(--spacing-sm); }
-.gap-md { gap: var(--spacing-md); }
-.gap-lg { gap: var(--spacing-lg); }
-.gap-xl { gap: var(--spacing-xl); }
-.gap-2xl { gap: var(--spacing-2xl); }
+.gap-5 { gap: var(--spacing-5); }
+.gap-10 { gap: var(--spacing-10); }
+.gap-15 { gap: var(--spacing-15); }
+.gap-20 { gap: var(--spacing-20); }
+.gap-30 { gap: var(--spacing-30); }
+.gap-35 { gap: var(--spacing-35); }
 
 /* Spacing */
-.p-xs { padding: var(--spacing-xs); }
-.p-sm { padding: var(--spacing-sm); }
-.p-md { padding: var(--spacing-md); }
-.p-lg { padding: var(--spacing-lg); }
-.p-xl { padding: var(--spacing-xl); }
+.p-0 { padding: 0; }
+.p-5 { padding: var(--spacing-5); }
+.p-10 { padding: var(--spacing-10); }
+.p-15 { padding: var(--spacing-15); }
+.p-20 { padding: var(--spacing-20); }
+.p-30 { padding: var(--spacing-30); }
 
-.px-md { padding-left: var(--spacing-md); padding-right: var(--spacing-md); }
-.px-lg { padding-left: var(--spacing-lg); padding-right: var(--spacing-lg); }
-.py-md { padding-top: var(--spacing-md); padding-bottom: var(--spacing-md); }
+.px-15 { padding-left: var(--spacing-15); padding-right: var(--spacing-15); }
+.px-20 { padding-left: var(--spacing-20); padding-right: var(--spacing-20); }
+.py-15 { padding-top: var(--spacing-15); padding-bottom: var(--spacing-15); }
 
-.m-xs { margin: var(--spacing-xs); }
-.mt-lg { margin-top: var(--spacing-lg); }
-.mb-lg { margin-bottom: var(--spacing-lg); }
-.my-xl { margin-top: var(--spacing-xl); margin-bottom: var(--spacing-xl); }
+.m-0 { margin: 0; }
+.m-5 { margin: var(--spacing-5); }
+.mt-20 { margin-top: var(--spacing-20); }
+.mb-20 { margin-bottom: var(--spacing-20); }
+.my-30 { margin-top: var(--spacing-30); margin-bottom: var(--spacing-30); }
 
 /* Width & Height */
 .w-full { width: 100%; }
@@ -62,31 +65,36 @@
 .h-full { height: 100%; }
 
 /* Colors */
-.bg-primary { background-color: var(--color-primary); }
-.bg-primary-light { background-color: var(--color-primary-light); }
-.bg-gray { background-color: var(--color-bg); }
+.main-color { background-color: var(--main-color); }
+.bg-filter-color { background-color: var(--filter-bg-color); }
+.bg-main-color { background-color: var(--main-bg-color); }
 .bg-white { background-color: white; }
 
-.text-primary { color: var(--color-primary); }
+.text-primary { color: var(--main-color); }
 .text-black { color: black; }
 .text-white { color: white; }
 
 /* Typography */
-.text-sm { font-size: 14px; }
-.text-base { font-size: 16px; }
-.text-lg { font-size: 18px; }
-.text-xl { font-size: 22px; }
-.font-bold { font-weight: 700; }
+.text-14 { font-size: 14px; }
+.text-16 { font-size: 16px; }
+.text-18 { font-size: 18px; }
+.text-22 { font-size: 22px; }
+.font-bold { font-weight: bold; }
 .text-center { text-align: center; }
 
 /* Borders */
+.no-border { border: none; }
 .rounded-full { border-radius: 9999px; }
-.rounded-lg { border-radius: 20px; }
-.rounded-l-lg { 
+.rounded-20 { border-radius: 20px; }
+.rounded-l-15 { 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.rounded-l-20 { 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.rounded-t-lg {
+.rounded-t-20 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -110,8 +118,8 @@
 }
 
 .nav-link:hover {
-    color: var(--color-primary);
-    border-top: 2px solid var(--color-primary);
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
     padding-top: calc(1rem - 2px);
 }
 
@@ -150,7 +158,7 @@
 }
 
 .filter-btn:hover {
-    background-color: var(--color-primary-light);
+    background-color: var(--filter-bg-color);
 }
 
 /* Cards Specific */
@@ -180,11 +188,11 @@
 
 /* Rating */
 .star {
-    color: var(--color-primary);
+    color: var(--main-color);
 }
 
 .star-neutral {
-    color: var(--color-bg);
+    color: var(--main-bg-color);
 }
 
 /* Media Queries */
@@ -219,12 +227,12 @@
     .nav-link {
         width: 100%;
         padding: 14px 0;
-        border-bottom: 2px solid var(--color-bg);
+        border-bottom: 2px solid var(--main-bg-color);
     }
     
     .nav-link:hover {
         border-top: none;
-        border-bottom: 2px solid var(--color-primary);
+        border-bottom: 2px solid var(--main-color);
     }
     
     .search-form {

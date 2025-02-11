@@ -15,44 +15,44 @@
     <link rel="stylesheet" href="./css/utilities.css">
 </head>
 
-<body>
-    <div class="main-container">
+<body class="flex justify-center p-0 m-0">
+    <div class="main-container container">
         <header>
-            <nav>
-                <img src="images/logo/Booki.png" alt="Logo de Booki" class="logo">
-                <ul class="nav-links">
+            <nav id="navbar" class="flex flex-wrap justify-between gap-20 items-center">
+                <img src="images/logo/Booki.png" alt="Logo de Booki" class="logo ">
+                <ul class="nav-links flex justify-between">
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
                 </ul>
             </nav>
 
             <div id="search">
-                <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h1 class="title text-22">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <form action="#" method="get" class="search-form">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="search" name="search" id="search" placeholder="Marseille, France">
+                <form action="#" method="get" class="search-form flex items-center">
+                    <i class="fa-solid fa-location-dot flex justify-center items-center h-full rounded-l-15 bg-main-color"></i>
+                    <input type="search" name="search" id="search" placeholder="Marseille, France" class="text-center w-half h-full text-16 font-bold no-border">
                     <button type="submit" class="search-btn">
                         Rechercher
                     </button>
                 </form>
             </div>
-            <div id="flex-filters">
+            <div id="flex-filters" class="flex items-center">
                 <h2>Filtres</h2>
-                <span id="filters">
-                    <div id="filter-economy" class="filter-container">
+                <span id="filters" class="flex flex-wrap items-center">
+                    <div id="filter-economy" class="filter-container flex justify-center items-center">
                         <i class="fa-solid fa-money-bill-wave"></i>
                         <a href="#" class="filter-link">Économique</a>
                     </div>
-                    <div id="filter-family" class="filter-container">
+                    <div id="filter-family" class="filter-container flex justify-center items-center">
                         <i class="fa-solid fa-person"></i>
                         <a href="#" class="filter-link">Familial</a>
                     </div>
-                    <div id="filter-romantic" class="filter-container">
+                    <div id="filter-romantic" class="filter-container flex justify-center items-center">
                         <i class="fa-solid fa-heart"></i>
                         <a href="#" class="filter-link">Romantique</a>
                     </div>
-                    <div id="filter-trendy" class="filter-container">
+                    <div id="filter-trendy" class="filter-container flex justify-center items-center">
                         <i class="fa-solid fa-fire"></i>
                         <a href="#" class="filter-link">Nos pépites</a>
                     </div>
@@ -60,21 +60,21 @@
             </div>
         </header>
 
-        <main>
-            <div id="nb-results">
+        <main class="flex flex-col gap-35">
+            <div id="nb-results" class="flex">
                 <i class="fa-solid fa-circle-info"></i>
                 <p>Plus de 500 logements disponibles dans cette ville</p>
             </div>
 
 
-            <div class="lodgements-and-popular">
+            <div class="lodgements-and-popular flex justify-between">
 
-                <section class="lodgements">
+                <section class="lodgements flex flex-col">
 
-                    <div class="lodgements-title">
-                        <h2 class="section-title">Hébergement à Marseille</h2>
+                    <div class="lodgements-title flex justify-between items-center">
+                        <h2 class="section-title m-0 text-22">Hébergement à Marseille</h2>
                     </div>
-                    <div class="lodgements-cards">
+                    <div class="lodgements-cards flex flex-wrap justify-between">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg"
@@ -203,8 +203,8 @@
                 </section>
 
                 <section class="popular">
-                    <div class="popular-title">
-                        <h2 class="section-title">Les plus populaires</h2>
+                    <div class="popular-title flex justify-between items-center">
+                        <h2 class="section-title m-0 text-22">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="popular-cards">
@@ -271,9 +271,9 @@
                     </div>
                 </section>
             </div>
-            <section id="activities">
-                <h2 class="section-title">Activités à Marseille</h2>
-                <div class="activities-cards">
+            <section id="activities" class="flex flex-col">
+                <h2 class="section-title m-0 text-22">Activités à Marseille</h2>
+                <div class="activities-cards flex flex-wrap">
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg"
@@ -317,10 +317,10 @@
             </section>
         </main>
         <footer>
-            <nav id="footer-nav">
-                <div class="footer-div">
-                    <h3 class="footer-title">À propos</h3>
-                    <ul>
+            <nav id="footer-nav" class="flex justify-between items-center gap-20">
+                <div class="footer-div flex flex-col">
+                    <h3 class="footer-title flex items-center">À propos</h3>
+                    <ul class="flex flex-col">
                         <a href="#">
                             <li>Fonctionnement du site</li>
                         </a>
@@ -333,9 +333,9 @@
                     </ul>
                 </div>
 
-                <div class="footer-div">
-                    <h3 class="footer-title">Nos hébergement</h3>
-                    <ul>
+                <div class="footer-div flex flex-col">
+                    <h3 class="footer-title flex">Nos hébergement</h3>
+                    <ul class="flex flex-col">
                         <a href="#">
                             <li>Charte qualité</li>
                         </a>
@@ -345,9 +345,9 @@
                     </ul>
                 </div>
 
-                <div class="footer-div">
-                    <h3 class="footer-title">Assistance</h3>
-                    <ul>
+                <div class="footer-div flex flex-col">
+                    <h3 class="footer-title flex">Assistance</h3>
+                    <ul class="flex flex-col">
                         <a href="#">
                             <li>Centre d’aide</li>
                         </a>
