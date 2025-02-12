@@ -32,6 +32,8 @@
 .justify-center { justify-content: center; }
 .items-center { align-items: center; }
 .items-start { align-items: flex-start; }
+.self-center { align-self: center; }
+
 .gap-5 { gap: var(--spacing-5); }
 .gap-10 { gap: var(--spacing-10); }
 .gap-15 { gap: var(--spacing-15); }
@@ -61,8 +63,11 @@
 /* Width & Height */
 .w-full { width: 100%; }
 .w-half { width: 50%; }
+.w-quarter { width: 25%; }
 .w-third { width: 33.333%; }
 .w-two-thirds { width: 66.666%; }
+
+.h-four-fifth { height: 80%; }
 .h-full { height: 100%; }
 
 /* Colors */
@@ -110,90 +115,6 @@
 
 .img-cover {
     object-fit: cover;
-}
-
-/* Navigation */
-.nav-link {
-    height: 100%;
-    padding-top: 1rem;
-}
-
-.nav-link:hover {
-    color: var(--main-color);
-    border-top: 2px solid var(--main-color);
-    padding-top: calc(1rem - 2px);
-}
-
-/* Search Form */
-.search-form {
-    width: 377px;
-    height: 49px;
-}
-
-.search-icon {
-    width: 13%;
-    height: 100%;
-    color: black;
-}
-
-.search-input {
-    width: 51%;
-    height: 100%;
-    border: none;
-    text-align: center;
-    font-weight: bold;
-}
-
-.search-btn {
-    width: 35%;
-    font-weight: bold;
-    border: none;
-    font-size: 16px;
-}
-
-/* Filter */
-.filter-btn {
-    height: 46px;
-    padding: 0 19px;
-    transition: background-color 0.3s;
-}
-
-.filter-btn:hover {
-    background-color: var(--filter-bg-color);
-}
-
-/* Cards Specific */
-.lodgement-card {
-    min-width: 250px;
-    max-height: 217px;
-}
-
-.lodgement-img {
-    height: 124px;
-    border: 5px solid white;
-}
-
-.popular-card-img {
-    width: 33%;
-    height: 136px;
-    border: 5px solid white;
-}
-
-.activity-card {
-    height: 439px;
-}
-
-.activity-img {
-    height: 86.5%;
-}
-
-/* Rating */
-.star {
-    color: var(--main-color);
-}
-
-.star-neutral {
-    color: var(--main-bg-color);
 }
 
 /* Media Queries */
