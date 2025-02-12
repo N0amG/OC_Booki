@@ -29,7 +29,6 @@ a {
 
 .card img {
     object-fit: cover;
-    border: 5px solid white;
 }
 
 .card-title {
@@ -206,29 +205,13 @@ input::placeholder {
 
 .activities-cards a {
     width: calc((100% - 90px) / 4);
-    height: 100%;
-}
-
-.activities-cards a .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 0;
-    gap: 0;
 }
 
 .activities-cards img {
-    width: 100%;
     height: 86.5%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 0;
 }
 
 .activities-cards a .card .card-txt {
-    display: flex;
-    align-content: center;
     height: 13.4%;
     padding-left: 19px;
 }
