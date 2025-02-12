@@ -49,12 +49,6 @@ a {
 
 #navbar ul {
     gap: 68px;
-    height: 100%;
-}
-
-#navbar ul li {
-    list-style: none;
-    height: 100%;
 }
 
 #navbar ul li a:hover {
@@ -74,51 +68,15 @@ form {
     height: 49px;
 }
 
-.fa-location-dot {
-    color: black;
-    width: 13%;
-}
-
 input::placeholder {
     color: black;
 }
 
-.search-btn {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
 
 /****** Filters ***********/
 #flex-filters,
 #flex-filters span {
-    justify-content: left;
     height: 46px;
-    gap: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.filter-container {
-    height: 100%;
-    gap: 10px;
-    border: 2px solid #D9D9D9;
-    border-radius: 25px;
-    padding: 0 19px 0 19px;
-}
-
-.filter-container:hover {
-    background-color: var(--filter-bg-color);
-}
-
-.filter-container a {
-    color: black;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-#flex-filters h2 {
-    font-size: 18px;
-    font-weight: bold;
 }
 
 /****** Main ***********/
