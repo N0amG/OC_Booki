@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style_proto.css">
     <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style_proto.css">
+
 </head>
 
 <body class="flex justify-center p-0 m-0">
     <div class="main-container container">
-        <header>
+        <header class="mb-30">
             <nav id="navbar" class="flex flex-wrap justify-between gap-20 items-center">
                 <img src="images/logo/Booki.png" alt="Logo de Booki" class="logo mt-20">
                 <ul class="nav-links flex justify-between h-full">
@@ -25,49 +26,59 @@
                     <li class="h-full no-style"><a href="#">Activités</a></li>
                 </ul>
             </nav>
-
-            <div id="search">
-                <h1 class="title text-22 mt-30">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <form action="#" method="get" class="search-form flex items-center justify-start">
-                    <i class="fa-solid fa-location-dot flex justify-center items-center h-full rounded-l-15 bg-main-color text-black w-13"></i>
-                    <input type="search" name="search" id="search" placeholder="Marseille, France" class="text-center w-half h-full text-16 font-bold no-border">
-                    <button type="submit" class="search-btn w-third main-color text-white font-bold text-16 py-15 px-20 no-border rounded-r-15">
-                        Rechercher
-                    </button>
-                </form>
-            </div>
-            <div id="flex-filters" class="flex items-center justify-start gap-15 my-25">
-                <h2 class="text-18 font-bold">Filtres</h2>
-                <span id="filters" class="flex flex-wrap items-center justify-start gap-15 my-25">
-                    <div id="filter-economy" class="filter-container flex justify-center items-center h-full gap-10 px-20 border rounded-25 bg-filter-color">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <a href="#" class="filter-link text-black text-17 font-bold">Économique</a>
-                    </div>
-                    <div id="filter-family" class="filter-container flex justify-center items-center h-full gap-10 px-20 border rounded-25 bg-filter-color">
-                        <i class="fa-solid fa-person"></i>
-                        <a href="#" class="filter-link text-black text-17 font-bold">Familial</a>
-                    </div>
-                    <div id="filter-romantic" class="filter-container flex justify-center items-center h-full gap-10 px-20 border rounded-25 bg-filter-color">
-                        <i class="fa-solid fa-heart"></i>
-                        <a href="#" class="filter-link text-black text-17 font-bold">Romantique</a>
-                    </div>
-                    <div id="filter-trendy" class="filter-container flex justify-center items-center h-full gap-10 px-20 border rounded-25 bg-filter-color">
-                        <i class="fa-solid fa-fire"></i>
-                        <a href="#" class="filter-link text-black text-17 font-bold">Nos pépites</a>
-                    </div>
-                </span>
-            </div>
         </header>
 
         <main class="flex flex-col gap-35">
+            <div id="title-text">
+                <h1 class="title text-22 mt-30">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+            <div id="search-bar" class="p-0">
+                <form action="#" method="get" class="search-form flex items-center justify-between w-full h-full">
+                    <i
+                        class="fa-solid fa-location-dot flex justify-center items-center h-full rounded-l-15 bg-main-color text-black w-50px"></i>
+                    <input type="search" name="search" id="search-input" placeholder="Marseille, France"
+                        class="text-center w-half h-full text-16 font-bold no-border">
+                    <button type="submit" id="search-btn"
+                        class="search-btn w-third main-color text-white font-bold text-16 py-15 px-20 no-border rounded-r-15 box-sizing">
+                        <span>Rechercher</span></i>
+                        <i class="fa-solid fa-magnifying-glass text-white justify-center items-center"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="flex-filters" class="flex items-center justify-start gap-15">
+                <h2 id="filter-title" class="text-18 font-bold">Filtres</h2>
+                <div id="filters" class="flex items-center justify-start gap-15 my-25">
+                    <div id="filter-economy"
+                        class="filter-container flex justify-center items-center h-full gap-10 px-20 border rounded-25 bg-filter-color">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <a href="#" class="filter-link text-black text-17 font-bold">Économique</a>
+                    </div>
+                    <div id="filter-family"
+                        class="filter-container flex justify-center items-center h-full gap-10 px-20 border rounded-25 bg-filter-color">
+                        <i class="fa-solid fa-person"></i>
+                        <a href="#" class="filter-link text-black text-17 font-bold">Familial</a>
+                    </div>
+                    <div id="filter-romantic"
+                        class="filter-container flex justify-center items-center h-full gap-10 px-20 border rounded-25 bg-filter-color">
+                        <i class="fa-solid fa-heart"></i>
+                        <a href="#" class="filter-link text-black text-17 font-bold">Romantique</a>
+                    </div>
+                    <div id="filter-trendy"
+                        class="filter-container flex justify-center items-center h-full gap-10 px-20 border rounded-25 bg-filter-color">
+                        <i class="fa-solid fa-fire"></i>
+                        <a href="#" class="filter-link text-black text-17 font-bold">Nos pépites</a>
+                    </div>
+                </div>
+            </div>
             <div id="nb-results" class="flex justify-start items-center gap-10">
                 <i class="fa-solid fa-circle-info"></i>
                 <p class="m-0">Plus de 500 logements disponibles dans cette ville</p>
             </div>
-                       
+
             <div class="lodgements-and-popular flex justify-between gap-30">
-                <section class="lodgements flex flex-col justify-around w-two-thirds p-30 gap-30 box-sizing rounded-20 bg-main-color">
+                <section
+                    class="lodgements flex flex-col justify-around w-two-thirds p-30 gap-30 box-sizing rounded-20 bg-main-color">
 
                     <div class="lodgements-title flex justify-between items-center">
                         <h2 class="section-title m-0 text-22">Hébergement à Marseille</h2>
@@ -81,7 +92,8 @@
                                 <div class="card-content pl-15 flex flex-col">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Hôtel du port</h3>
-                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 52<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 52<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -102,7 +114,8 @@
                                 <div class="card-content pl-15 flex flex-col">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Hôtel Chez Amina</h3>
-                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 96<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 96<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -123,7 +136,8 @@
                                 <div class="card-content pl-15 flex flex-col">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Hôtel Les mouettes</h3>
-                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 76<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 76<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -144,7 +158,8 @@
                                 <div class="card-content pl-15 flex flex-col">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Hôtel de la mer</h3>
-                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 46<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 46<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -166,7 +181,8 @@
                                 <div class="card-content pl-15 flex flex-col">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Auberge La Canebière</h3>
-                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 25<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 25<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -188,7 +204,8 @@
                                 <div class="card-content pl-15 flex flex-col">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Auberge Le Panier</h3>
-                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 23<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle text-14 m-0 mb-5">Nuit à partir de 23<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -220,7 +237,8 @@
                                 <div class="card-content flex flex-col justify-between w-two-thirds box-sizing">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Hôtel Le soleil du matin</h3>
-                                        <p class="card-subtitle m-0">Nuit à partir de 128<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle m-0">Nuit à partir de 128<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -241,7 +259,8 @@
                                 <div class="card-content flex flex-col justify-between w-two-thirds box-sizing">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Chambres d’hôtes Au cœur de l’eau</h3>
-                                        <p class="card-subtitle m-0">Nuit à partir de 71<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle m-0">Nuit à partir de 71<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -262,7 +281,8 @@
                                 <div class="card-content flex flex-col justify-between w-two-thirds box-sizing">
                                     <div class="card-txt">
                                         <h3 class="card-title text-16">Hôtel Bleu et Blanc</h3>
-                                        <p class="card-subtitle m-0">Nuit à partir de 68<span class="euro font-bold">€</span></p>
+                                        <p class="card-subtitle m-0">Nuit à partir de 68<span
+                                                class="euro font-bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
