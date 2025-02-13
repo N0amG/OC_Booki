@@ -27,8 +27,10 @@
 
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
 .flex-wrap { flex-wrap: wrap; }
 .justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
 .justify-center { justify-content: center; }
 .justify-start { justify-content: flex-start; }
 .items-center { align-items: center; }
@@ -52,16 +54,18 @@
 .p-20 { padding: var(--spacing-20); }
 .p-30 { padding: var(--spacing-30); }
 
-.px-15 { padding-left: var(--spacing-15); padding-right: var(--spacing-15); }
+.pl-15 { padding-left: var(--spacing-15); }
 .px-20 { padding-left: var(--spacing-20); padding-right: var(--spacing-20); }
 .py-15 { padding-top: var(--spacing-15); padding-bottom: var(--spacing-15); }
 
 .m-0 { margin: 0; }
 .m-5 { margin: var(--spacing-5); }
 .mt-20 { margin-top: var(--spacing-20); }
+.mb-5 { margin-bottom: var(--spacing-5); }
 .mb-20 { margin-bottom: var(--spacing-20); }
 .my-25 { margin-top: 25px; margin-bottom: 25px; }
 .my-30 { margin-top: var(--spacing-30); margin-bottom: var(--spacing-30); }
+.mt-30 { margin-top: var(--spacing-30); }
 .mt-35 { margin-top: var(--spacing-35); }
 
 /* Width & Height */
@@ -72,6 +76,7 @@
 .w-third { width: 33.333%; }
 .w-two-thirds { width: 66.666%; }
 
+.h-third-fifth { height: 60%; }
 .h-four-fifth { height: 80%; }
 .h-full { height: 100%; }
 
@@ -120,6 +125,7 @@
     border-top-right-radius: 20px;
 }
 .border { border: 2px solid var(--color-border); }
+.box-sizing { box-sizing: border-box; }
 
 /* Components Base */
 .card-1 {
@@ -128,55 +134,4 @@
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.img-cover {
-    object-fit: cover;
-}
-
-/* Media Queries */
-@media (max-width: 1024px) {
-    .md\:flex-col { flex-direction: column; }
-    .md\:w-full { width: 100%; }
-    
-    .filter-btn {
-        width: calc((100% - 40px - 10px) / 2);
-    }
-    
-    .popular-card {
-        width: 30%;
-    }
-    
-    .activity-card {
-        height: 270px;
-    }
-    
-    .activity-img {
-        height: 74%;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .container {
-        padding: 0;
-    }
-    
-    .sm\:flex-col { flex-direction: column; }
-    
-    .nav-link {
-        width: 100%;
-        padding: 14px 0;
-        border-bottom: 2px solid var(--main-bg-color);
-    }
-    
-    .nav-link:hover {
-        border-top: none;
-        border-bottom: 2px solid var(--main-color);
-    }
-    
-    .search-form {
-        width: 100%;
-    }
-    
-    .filter-btn {
-        font-size: 14px;
-    }
-}
+.img-cover { object-fit: cover; }

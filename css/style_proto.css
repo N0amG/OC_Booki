@@ -24,14 +24,11 @@ a {
 
 .card {
     display: flex;
-    gap: 4px;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
-
 
 /****** Header ***********/
 
@@ -53,7 +50,6 @@ a {
 }
 
 form {
-    justify-content: left;
     width: 377px;
     height: 49px;
 }
@@ -69,46 +65,11 @@ input::placeholder {
     height: 46px;
 }
 
-/****** Main ***********/
-
-#nb-results p {
-    margin: 0;
-    margin-left: 10px;
-    margin-bottom: 35px;
-}
-
-/****** lodgements And popular ***********/
-.lodgements-and-popular {
-    gap: 30px;
-}
-
-.lodgements-and-popular section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
 
 /****** lodgements ***********/
-.lodgements {
-    width: 65%;
-    justify-content: space-around;
-    gap: 30px;
-}
-
-
-.lodgements-cards {
-    gap: 30px;
-}
 
 .lodgements a {
     width: calc((100% - 60px) / 3);
-}
-
-.lodgements-cards .card {
-    box-sizing: border-box;
-    min-width: 250px;
-    max-height: 217px;
 }
 
 .lodgements-cards .card-title {
@@ -116,13 +77,13 @@ input::placeholder {
     margin-bottom: 4px;
 }
 
-.lodgements-cards .card-rating {
-    margin-bottom: 15px;
+.lodgements-cards .card-content {
+    height: 40%;
+    width: 100%;
 }
 
 .lodgements-cards img {
     height: 124px;
-    border: 5px;
 }
 
 /****** popular ***********/
@@ -133,7 +94,6 @@ input::placeholder {
 
 .popular-cards .card-content {
     padding-left: 15px;
-    box-sizing: border-box;
 }
 
 .popular-cards .card-title {
@@ -179,12 +139,6 @@ input::placeholder {
     padding-bottom: 0;
 }
 
-.footer-div ul {
-    align-items: left;
-    justify-content: left;
-    list-style-type: none;
-}
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -195,8 +149,6 @@ input::placeholder {
 
     #flex-filters {
         height: 91px;
-        flex-direction: column;
-        align-items: flex-start;
         gap: 20px;
     }
 
