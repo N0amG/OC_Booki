@@ -119,7 +119,7 @@ a {
 
 /* Borders */
 .no-border { border: 0; }
-.rounded-full { border-radius: 9999px; }
+.rounded-full { border-radius: 50%; }
 .rounded-20 { border-radius: 20px; }
 .rounded-25 { border-radius: 25px; }
 

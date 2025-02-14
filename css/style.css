@@ -7,7 +7,7 @@
     --color-border: #D9D9D9;
 }
 
-/****** Header ***********/
+/****** Header *******/
 
 /********** Navbar ***********/
 
@@ -25,6 +25,19 @@
     width: 61px;
     height: 19px;
 }
+
+/**** Main ****/
+
+#info_logo {
+    width: 24px;  /* Taille du rond */
+    height: 24px; /* Taille du rond */
+    border-width: 1px;
+}
+
+#info_logo::before {
+    font-size: 10px; /* Taille du texte correspondant à la hauteur */
+}
+/****** Search and Filters ***********/
 
 #search-bar {
     width: 377px;
@@ -46,7 +59,6 @@ input::placeholder {
     display: none;
 }
 
-/****** Filters ***********/
 #flex-filters,
 #flex-filters div {
     height: 50px;
