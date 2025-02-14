@@ -133,8 +133,6 @@ input::placeholder {
 
 .footer-div {
     width: calc((100%) / 3);
-    align-items: top;
-    justify-content: top;
     padding-bottom: 0;
 }
 
