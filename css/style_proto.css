@@ -352,7 +352,7 @@ input::placeholder {
         flex-flow: row wrap;
     }
 
-    #flex-filters h2 {
+    #flex-filters h2, .popular {
         margin: 0;
     }
 
