@@ -91,7 +91,6 @@ a {
 .bg-filter-color:hover { background-color: var(--filter-bg-color); }
 .bg-main-color { background-color: var(--main-bg-color); }
 .bg-white { background-color: white; }
-
 .text-black { color: black; }
 .text-white { color: white; }
 
@@ -110,17 +109,14 @@ a {
 .rounded-full { border-radius: 50%; }
 .rounded-20 { border-radius: 20px; }
 .rounded-25 { border-radius: 25px; }
-
 .rounded-l-15 { 
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-
 .rounded-r-15 { 
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-
 .rounded-l-20 { 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -129,9 +125,6 @@ a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
 .border { border: 2px solid var(--color-border); }
-
 .box-sizing { box-sizing: border-box; }
-
 .img-cover { object-fit: cover; }
