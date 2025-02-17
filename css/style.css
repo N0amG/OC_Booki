@@ -86,7 +86,6 @@ input::placeholder {
 }
 .footer-div {
     width: calc((100%) / 3);
-    padding-bottom: 0;
 }
 
 /****** Media queries ***********/
