@@ -8,7 +8,7 @@ Ce projet est la page d'accueil du site d’une agence de voyage, développée e
 
 ---
 
-##**Description du Projet**  
+## **Description du Projet**  
 
 Booki permet aux utilisateurs de rechercher facilement des **hébergements** et des **activités** dans la ville de leur choix. L’objectif était d’intégrer une maquette fournie, tout en respectant des critères stricts de responsivité et d’accessibilité.  
 
